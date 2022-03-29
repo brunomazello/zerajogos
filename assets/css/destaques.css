@@ -1,0 +1,83 @@
+.cabecalho {
+    color: var(--cor-titulo-cabecalho);
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: Montserrat, sans-serif;
+    display: flex;
+    align-items: flex-start;
+}
+.cabecalho:hover {
+    color: var(--cor-titulo-cabecalho-ativo);
+    transition: 1s;
+}
+
+.destaques {
+    display: grid;
+    grid-template-columns: 24% 24% 24% 24%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    height: calc(100vh - 50px);
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.destaques__titulo {
+    background-color: var(--bg-transparente);
+    color: #fdfdfdfd;
+    padding: .6rem;
+    text-align: center;
+    width: 100%;
+}
+
+.caixa{
+    align-items: flex-end;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+}
+
+.destaques__principal {
+    background: url(../img/valorant.jpg) center / cover no-repeat;
+    grid-row: 1 / 3;
+}
+
+.destaques__secundario:nth-child(2) {
+    background: url(../img/lost-ark.jpg) center / cover no-repeat;
+}
+
+.destaques__secundario:nth-child(3) {
+    background: url(../img/github.png) center / cover no-repeat;
+}
+
+.destaques__secundario:nth-child(4) {
+    background: url(../img/whatsapp.png) center / cover no-repeat;
+}
+
+.destaques__secundario:nth-child(5) {
+    background: url(../img/cs-go.jpg) center / cover no-repeat;
+}
+
+.destaques__categorias {
+    grid-row: 3/3;
+}
+
+.destaques__categorias___lista {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.destaques__categorias___item {
+    align-items: center;
+    background-color: var(--bg-navegacao);
+    border: 5px solid #029348;
+    color: #333333;
+    display: flex;
+    padding: 1rem;
+    width: 50%;
+}
+
+.destaques__categorias___link {
+    color: inherit;
+}

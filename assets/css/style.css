@@ -1,0 +1,44 @@
+:root {
+    --bg-navegacao: #01fa5a;
+    --bg-fundosite: #021114;
+    --bg-transparente: rgba(0,0,0, .5);
+    --cor-titulo-cabecalho: #fff;
+    --cor-titulo-cabecalho-ativo: #01fa5a;
+    --bg-populares: #01fa5a;
+    --bg-caixa-populares: #fff;
+    --bg-caixa-populares-selecao: #029c38;
+    --fonte-titulo-populares: #FFF;
+    --fonte-data-populares: #000;
+    --fonte-descricao-populares: #fff;
+    --bg-rodape: #01fa5a;
+}
+
+.app {
+    background: var(--bg-fundosite);
+    display: grid;  
+    font-family: Arial, Helvetica, sans-serif;
+    grid-template-areas: 
+    "cabecalho"
+    "conteudo"
+    "rodape";
+    grid-template-columns: auto;
+    grid-template-rows: 50px auto auto;
+}
+
+.cabecalho {
+    grid-area: cabecalho;
+    display: flex;
+    padding: 0.5rem 2rem;
+}
+ 
+.conteudo {
+    grid-area: conteudo;
+    padding: 0.5rem 2rem;
+}
+
+.rodape {
+    grid-area: rodape;
+    background: var(--bg-rodape);
+    text-align: center;
+    padding: 20px;
+}

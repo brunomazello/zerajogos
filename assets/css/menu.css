@@ -1,0 +1,10 @@
+.menu__link {
+    color: #fff;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+
+}
+
+.menu__link:hover, .menu__link.ativo {
+    border-bottom: 2px solid var(--bg-navegacao);
+}
